@@ -1,0 +1,15 @@
+C:\Users\zhaob\Desktop\comp2021-2026-2-portfolio-a1918020\Topic1\PracA\Task2\PayrollCalculator\bin\Debug\net10.0\PayrollCalculator.exe
+C:\Users\zhaob\Desktop\comp2021-2026-2-portfolio-a1918020\Topic1\PracA\Task2\PayrollCalculator\bin\Debug\net10.0\PayrollCalculator.deps.json
+C:\Users\zhaob\Desktop\comp2021-2026-2-portfolio-a1918020\Topic1\PracA\Task2\PayrollCalculator\bin\Debug\net10.0\PayrollCalculator.runtimeconfig.json
+C:\Users\zhaob\Desktop\comp2021-2026-2-portfolio-a1918020\Topic1\PracA\Task2\PayrollCalculator\bin\Debug\net10.0\PayrollCalculator.dll
+C:\Users\zhaob\Desktop\comp2021-2026-2-portfolio-a1918020\Topic1\PracA\Task2\PayrollCalculator\bin\Debug\net10.0\PayrollCalculator.pdb
+C:\Users\zhaob\Desktop\comp2021-2026-2-portfolio-a1918020\Topic1\PracA\Task2\PayrollCalculator\obj\Debug\net10.0\PayrollCalculator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zhaob\Desktop\comp2021-2026-2-portfolio-a1918020\Topic1\PracA\Task2\PayrollCalculator\obj\Debug\net10.0\PayrollCalculator.AssemblyInfoInputs.cache
+C:\Users\zhaob\Desktop\comp2021-2026-2-portfolio-a1918020\Topic1\PracA\Task2\PayrollCalculator\obj\Debug\net10.0\PayrollCalculator.AssemblyInfo.cs
+C:\Users\zhaob\Desktop\comp2021-2026-2-portfolio-a1918020\Topic1\PracA\Task2\PayrollCalculator\obj\Debug\net10.0\PayrollCalculator.csproj.CoreCompileInputs.cache
+C:\Users\zhaob\Desktop\comp2021-2026-2-portfolio-a1918020\Topic1\PracA\Task2\PayrollCalculator\obj\Debug\net10.0\PayrollCalculator.sourcelink.json
+C:\Users\zhaob\Desktop\comp2021-2026-2-portfolio-a1918020\Topic1\PracA\Task2\PayrollCalculator\obj\Debug\net10.0\PayrollCalculator.dll
+C:\Users\zhaob\Desktop\comp2021-2026-2-portfolio-a1918020\Topic1\PracA\Task2\PayrollCalculator\obj\Debug\net10.0\refint\PayrollCalculator.dll
+C:\Users\zhaob\Desktop\comp2021-2026-2-portfolio-a1918020\Topic1\PracA\Task2\PayrollCalculator\obj\Debug\net10.0\PayrollCalculator.pdb
+C:\Users\zhaob\Desktop\comp2021-2026-2-portfolio-a1918020\Topic1\PracA\Task2\PayrollCalculator\obj\Debug\net10.0\PayrollCalculator.genruntimeconfig.cache
+C:\Users\zhaob\Desktop\comp2021-2026-2-portfolio-a1918020\Topic1\PracA\Task2\PayrollCalculator\obj\Debug\net10.0\ref\PayrollCalculator.dll

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\zhaob\\Desktop\\comp2021-2026-2-portfolio-a1918020\\Topic1\\PracA\\Task2\\PayrollCalculator\\PayrollCalculator.csproj": {}
+    "C:\\Users\\zhaob\\Desktop\\comp2021-2026-2-portfolio-a1918020\\Topic1\\PracA\\Task2\\PayrollCalculator\\PayrollCalculator.csproj": {}
   },
   "projects": {
-    "c:\\Users\\zhaob\\Desktop\\comp2021-2026-2-portfolio-a1918020\\Topic1\\PracA\\Task2\\PayrollCalculator\\PayrollCalculator.csproj": {
+    "C:\\Users\\zhaob\\Desktop\\comp2021-2026-2-portfolio-a1918020\\Topic1\\PracA\\Task2\\PayrollCalculator\\PayrollCalculator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\zhaob\\Desktop\\comp2021-2026-2-portfolio-a1918020\\Topic1\\PracA\\Task2\\PayrollCalculator\\PayrollCalculator.csproj",
+        "projectUniqueName": "C:\\Users\\zhaob\\Desktop\\comp2021-2026-2-portfolio-a1918020\\Topic1\\PracA\\Task2\\PayrollCalculator\\PayrollCalculator.csproj",
         "projectName": "PayrollCalculator",
-        "projectPath": "c:\\Users\\zhaob\\Desktop\\comp2021-2026-2-portfolio-a1918020\\Topic1\\PracA\\Task2\\PayrollCalculator\\PayrollCalculator.csproj",
+        "projectPath": "C:\\Users\\zhaob\\Desktop\\comp2021-2026-2-portfolio-a1918020\\Topic1\\PracA\\Task2\\PayrollCalculator\\PayrollCalculator.csproj",
         "packagesPath": "C:\\Users\\zhaob\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\zhaob\\Desktop\\comp2021-2026-2-portfolio-a1918020\\Topic1\\PracA\\Task2\\PayrollCalculator\\obj\\",
+        "outputPath": "C:\\Users\\zhaob\\Desktop\\comp2021-2026-2-portfolio-a1918020\\Topic1\\PracA\\Task2\\PayrollCalculator\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\zhaob\\AppData\\Roaming\\NuGet\\NuGet.Config"
