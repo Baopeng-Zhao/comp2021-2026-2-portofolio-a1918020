@@ -1,8 +1,38 @@
 class Payroll
 {
-    private double hours;
-    private decimal rate;
-    private decimal taxRate;
+    private double hours
+    {
+        get; set
+        {
+            if (value < 0)
+            {
+                throw new ArgumentException("Hours should be positive.");
+            }
+            field = value;
+        }
+    }
+    private decimal rate
+    {
+        get; set
+        {
+            if (value < 0)
+            {
+                throw new ArgumentException("Rate should be positive.");
+            }
+            field = value;
+        }
+    }
+    private decimal taxRate
+    {
+        get; set
+        {
+            if (value < 0)
+            {
+                throw new ArgumentException("Tax rate should be positive.");
+            }
+            field = value;
+        }
+    }
 
     public Payroll(double hours, decimal rate, decimal taxRate)
     {
