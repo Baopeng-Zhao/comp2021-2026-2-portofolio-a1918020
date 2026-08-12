@@ -1,0 +1,4 @@
+What differences did you observe moving from procedural to class-based design?
+In class-based design, different classes are designed and completed from the perspective of different functional implementations, which makes the code structure of the program clearer and facilitates a better understanding of the code implementation. In the procedural version, variables and functions are kept separate.
+How does static typing affect your workflow?
+Static typing requires me to specify the data type before compilation. However, from the perspective of achieving functionality, I often need to convert the types. But I can identify the problems in the code during the compilation stage.
