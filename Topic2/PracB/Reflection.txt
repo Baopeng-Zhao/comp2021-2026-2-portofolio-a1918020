@@ -1,0 +1,6 @@
+1.What does encapsulation achieve in C#?
+The encapsulation protect the data and provides a platform for controlling the access and modification of the data.
+2.Why are access modifiers important?
+The access modifier provides access control between classes, data, and methods in the program. Public members can be accessed by other classes, while private members can only be accessed by the same class. This prevents unexpected changes to the data.
+3.How would you explain method overloading to a Python programmer?
+Method overloading in C# means having multiple methods with the same name but different parameter types or numbers of parameters. C# chooses which method to call based on the arguments passed to it. For example, Deposit(int), Deposit(double), and Deposit(decimal) have the same name but accept different types.
