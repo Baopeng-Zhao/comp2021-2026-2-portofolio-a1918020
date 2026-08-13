@@ -14,7 +14,7 @@
         return net;
     }
 
-    static void Main(string[] args)
+    static void Main()
     {
         try
         {
@@ -26,14 +26,26 @@
         double rate = double.Parse(Console.ReadLine()??"");
         double netPay = CalculatePay(hours, rate);
         Console.WriteLine($"{name} earned ${netPay:F2} after tax.");
-        }
-        catch (FormatException)
-        {
-            Console.WriteLine("Invalid number entered. ");
-        }
-        catch (ArgumentException ex)
-        {
-            Console.WriteLine(ex.Message);
-        }
+
+        Person person = new Person("Baopeng", "Zhao", 21);
+        Console.WriteLine($"Full Name: {person.FullName()}");
+        Console.WriteLine($"Age: {person.Age}");
+        Console.WriteLine($"Is Adult: {person.IsAdult()}");
+
+    }
+    catch (FormatException)
+    {
+        Console.WriteLine("Invalid number entered. ");
+    }
+    catch (ArgumentException ex)
+    {
+        Console.WriteLine(ex.Message);
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"An unexpected error occurred: {ex.Message}");                           
+    }
     }
 }
+
+
