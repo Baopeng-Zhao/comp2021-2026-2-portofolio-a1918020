@@ -1,0 +1,2 @@
+one design choice you improved and why.
+I extracted the name and age validation from the constructor into separate methods. This makes the constructor easier to read and gives each method a clear responsibility.
