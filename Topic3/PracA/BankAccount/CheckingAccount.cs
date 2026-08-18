@@ -12,4 +12,12 @@ public class CheckingAccount : BankAccount
     {
         Balance -= (double)amount + TransactionFee;
     }
+
+    public override void DisplayAccountInfo()
+    {
+        Console.WriteLine("Account: CheckingAccount");
+        Console.WriteLine($"Owner: {Owner}");
+        Console.WriteLine($"Balance: ${Balance}");
+        Console.WriteLine($"Transaction fee: ${TransactionFee}");
+    }
 }

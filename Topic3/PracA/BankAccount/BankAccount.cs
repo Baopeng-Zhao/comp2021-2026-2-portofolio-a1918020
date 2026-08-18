@@ -33,4 +33,10 @@ public class BankAccount
         Owner = owner;
         Balance = balance;
     }
+
+    public virtual void DisplayAccountInfo()
+    {
+        Console.WriteLine($"Owner: {Owner}");
+        Console.WriteLine($"Balance: ${Balance}");
+    }
 }

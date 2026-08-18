@@ -11,4 +11,12 @@ public class SavingsAccount : BankAccount
         double interest = Balance * InterestRate;
         Deposit(interest);
     }
+
+    public override void DisplayAccountInfo()
+    {
+        Console.WriteLine("Account: SavingsAccount");
+        Console.WriteLine($"Owner: {Owner}");
+        Console.WriteLine($"Balance: ${Balance}");
+        Console.WriteLine($"Interest rate: {InterestRate * 100}%");
+    }
 }
