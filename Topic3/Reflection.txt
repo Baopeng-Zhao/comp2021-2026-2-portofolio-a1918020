@@ -1,0 +1,5 @@
+1.How does this reduce duplicated code?
+Inheritance can reduce duplicate code. All subclasses can freely call the objects in the parent class and even can override the virtual objects in the parent class using "override". This avoids writing repetitive code in the subclasses and improves code readability. For example, in this assignment, the two subclasses actually call the contents in the parent class to make simple functional modifications, and do not need to rewrite a large amount of code to achieve the same functionality.
+2.What new responsibilities does each subclass have?
+SavingsAccount has the new responsibility of storing an interest rate and applying interest to the balance using ApplyInterest().
+CheckingAccount has the new responsibility of storing a transaction fee and deducting the fee when a withdrawal is made.
