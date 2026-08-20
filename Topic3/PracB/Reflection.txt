@@ -1,0 +1,4 @@
+What does polymorphism allow us to do that inheritance alone does not?
+Polymorphism allows different subclasses to be treated as objects of the parent class, while still being able to execute the overridden methods. However, inheritance is merely the extension of the subclass based on the parent class.
+How is this similar or different from Python (or C++)’s behaviour?
+C# polymorphism is similar to Python and C++ because the same method call can produce different behaviour depending on the object type. Python is more flexible because it does not require a common base class, while C# uses inheritance or interfaces with stronger type checking. C++ is more similar to C#, but usually uses virtual methods and pointers or references to achieve runtime polymorphism.
