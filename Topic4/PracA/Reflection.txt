@@ -11,3 +11,7 @@ I removed the unused using System.ComponentModel.DataAnnotations; statement. It 
 I changed Replace("\r", "") to use StringComparison.Ordinal. This makes the intended string comparison explicit and avoids ambiguity about culture-specific string comparison.
 I adjusted the original paragraph indentation to enhance the readability of the code.
 5. Pick 3 issues that you decided not to fix based on the new code analysis rules - why didn't they need to be fixed?
+3 issues: did not move strings into resource files, Console.WriteLine() and every detailed problem by the analyser.
+I did not move strings such as "Your answer was RIGHT!" and "Expected total was: 1120" into resource files. The analyser recommends this for localisation, but this is a small university console program that does not need to support multiple languages.
+I did not change all of the Console.WriteLine() literal strings into resources for the same reason. They are simple fixed messages used only for testing the output, so using resource files would make the program unnecessarily complicated.
+I did not address every minor style recommendation produced by the analyser. Some recommendations only affect coding style and do not affect the correctness, readability, or behaviour of this small program, so I decided that changing them was unnecessary.
