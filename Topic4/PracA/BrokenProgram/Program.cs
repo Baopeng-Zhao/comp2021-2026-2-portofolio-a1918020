@@ -12,7 +12,6 @@
       457
        * 
         2
-         
       """;
         int total = 0;
         List<int> items = [];
