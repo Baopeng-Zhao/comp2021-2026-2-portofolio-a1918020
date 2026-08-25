@@ -1,0 +1,13 @@
+Reflection:
+1. Of all the values in the items list, only one of them was wrong. Which value was incorrect? Why were all the other values still correct?
+The incorrect value was 457. It was read as 57 because the Substring started one position too far forward. The other values were still correct because they had spaces before the numbers, so skipping one character only skipped a space and did not remove part of the number.
+2. What was going wrong when iterating through the symbols list?
+The retrieval conditions of the substring cannot correctly capture all the values during the traversal process. Therefore, when capturing the * symbol, the program captures the * symbol with a space attached instead of a single * symbol.
+3. How did stepping through the code and using the debugger help you find the issues?
+The Debugger enables me to examine the changes in the values of variables during the program's execution. By setting breakpoints and stepping through the program, I can precisely observe where the error occurs.
+4. Pick 3 issues that you fixed based on the new code analysis rules - how did they improve your code?
+3 issues: Fixing formatting, delete using statement and improved clearedInput
+I removed the unused using System.ComponentModel.DataAnnotations; statement. It was not used anywhere in the program, so removing it made the code cleaner and removed an unnecessary dependency.
+I changed Replace("\r", "") to use StringComparison.Ordinal. This makes the intended string comparison explicit and avoids ambiguity about culture-specific string comparison.
+I adjusted the original paragraph indentation to enhance the readability of the code.
+5. Pick 3 issues that you decided not to fix based on the new code analysis rules - why didn't they need to be fixed?

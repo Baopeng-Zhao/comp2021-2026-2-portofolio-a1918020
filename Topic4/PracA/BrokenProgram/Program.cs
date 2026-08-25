@@ -1,4 +1,6 @@
-﻿public static class BrokenProgram
+﻿using System.Globalization;
+
+public static class BrokenProgram
 {
     static void Main(string[] args)
     {
@@ -16,7 +18,7 @@
         int total = 0;
         List<int> items = [];
         List<string> symbols = [];
-        string clearedInput = input.Replace("\r","");
+        string clearedInput = input.Replace("\r", "", StringComparison.Ordinal);
 
         for (int i = 0; i < clearedInput.Split("\n").Length; i += 2)
         {
