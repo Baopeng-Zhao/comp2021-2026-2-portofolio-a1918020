@@ -1,0 +1,10 @@
+How are the symbols and tachyonGrid variables different? What does [..^1] do?
+Answer: The symbol contains all the content in the example except for the '\n' characters. The tachyonGrid contains all the content in the symbol except for the last element. [..^1] A range can be created that encompasses the first element up to, but not including, the last element.
+How do the posX and character variables increment in each iteration of the loop?
+Answer: posX starts at 0 and increases by 1 for each character. character contains the character at that position in the string. The Index() method lets the loop access both the index and the value at the same time.
+How is behaviour different than doing a for loop or a foreach over item?
+Answer:For method allows you to modify the number of iterations and the loop conditions yourself. The foreach over item method merely provides the content.
+What does the method currently do for this edge case? Do you think this approach is correct? Why or why not?
+Answer:The program determines the position of the "^" symbol by checking if tachyonGrid[posY - 1][posX] == '|', and then changes both sides of the "|" to "|". The edge case mentioned in the question, from a code perspective, refers to a situation where two "|" are inserted at the beginning and end of a position. I think this is incorrect because it fails to show that the two have reached the same position. This actually does not conform to the stipulations for the '^' symbol in this program.
+What does the program currently output? What's your intuition on why the reported total is incorrect? (No need to find or fix bugs yet)
+Answer: Current output is "Total Tachyon Manifold splits were: 0". No code is used to return the value of totalcount; totalcount remains in an initialized state at all times.
