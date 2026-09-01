@@ -1,0 +1,6 @@
+Syntax differences between Lists and Arrays.
+Answer: The most fundamental difference between list and array lies in that when initializing a list, there is no need to set the length of the storage values, while for an array, the length is already determined during initialization.
+Performance and flexibility of each type.
+Answer: The list can change the number of elements it contains or the values of the elements at any time. You can select the operation to be performed using commands such as add, addrange, remove, and invert. For the array, you retrieve the position of the element to be changed using the index and then operate on that element. The list uses the count command to obtain the number of elements, while the array uses the length command to get the number of elements.
+When you would use each structure.
+Answer: Arrays perform better when the number of elements is fixed or relatively small, while lists perform better when the number of elements is uncertain or large. I will use arrays or lists based on the specific requirements of the design object.
