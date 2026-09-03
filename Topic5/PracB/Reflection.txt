@@ -1,0 +1,8 @@
+How is the structure of a LinkedList<T> different from List<T>?
+List can directly retrieve the desired element by using the index, while LinkedList requires nodes to traverse the elements in order to find the desired element.
+Describe why you can't initialize a LinkedList<string> using standard List syntax: LinkedList<string> stringLinkedList = ["Why", "isn't", "it", "possible!!"];
+In Link, you can directly add elements using the Add() method. However, in linkedlist, you cannot use Add() to add elements because the program needs to know the position in the linkedlist to add the elements.
+Further, if the nodes are linked in a set order, why can't you just access nodes directly using e.g.LinkedList[3]?
+A certain position cannot directly find the element using LinkedList because LinkedList can only determine the element through nodes, and nodes are not of the int type. Therefore, LinkedList cannot be used in the same way as in Link to directly access the element by using an index.
+Make a change to your "fred" person after calling the ToLinkedList method, did the changes to fred propagate to the List and LinkedList? Why or why not?
+Yes. If I modify fred, this change will affect list and linkedlist as well. This is because fred is a property of person, and both list and linkedlist are created based on the person type and rely on person rather than individual copies.
