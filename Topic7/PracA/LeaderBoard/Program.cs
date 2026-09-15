@@ -79,7 +79,7 @@ DisplayAccounts(BankAccounts);
 Console.WriteLine("");
 
 BankAccount poor = new BankAccount("poor", 0m);
-BankAccount rich = new BankAccount("rich", 100000000000000m);
+BankAccount rich = new BankAccount("rich", 10000m);
 BankAccounts.Add(poor);
 BankAccounts.Add(rich);
 
@@ -89,3 +89,16 @@ Console.WriteLine("");
 BankAccounts.Add(ian);
 DisplayAccounts(BankAccounts);
 Console.WriteLine("");
+
+double[] dataY = new double[BankAccounts.Count];
+int i = 0;
+foreach (BankAccount account in BankAccounts)
+{
+    dataY[i] = (double)account.Balance;
+    i++;
+}
+ScottPlot.Plot myPlot = new();
+myPlot.YLabel("Account Balance", size: 20);
+myPlot.XLabel("Ranking", size:20);
+myPlot.Axes.Margins(bottom:0, top:0.2);
+myPlot.Add.Bars(dataY);myPlot.SavePng("Topic7A-Task3.png", 800, 600);

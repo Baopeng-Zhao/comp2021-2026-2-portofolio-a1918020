@@ -4,11 +4,11 @@ public class BankComparer: IComparer<BankAccount>
     {
         if(x.Balance < y.Balance)
         {
-            return -1;
+            return 1;
         }
         if(x.Balance > y.Balance)
         {
-            return 1;
+            return -1;
         }
         return string.Compare(x.Owner, y.Owner);
     }
