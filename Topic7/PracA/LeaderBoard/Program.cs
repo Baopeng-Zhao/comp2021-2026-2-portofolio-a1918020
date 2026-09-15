@@ -1,5 +1,4 @@
 ﻿using System.IO.Compression;
-
 void DisplayScores(SortedSet<int> scores)
 {
     int lowest = scores.ElementAt(1);
@@ -31,3 +30,16 @@ DisplayScores(scores);
 
 scores.Add(1);
 DisplayScores(scores);
+
+BankAccount ian = new BankAccount("ian", 1000m);
+BankAccount jack = new BankAccount("jack", 1001m);
+BankAccount alice = new BankAccount("alice", 1002m);
+BankAccount tom = new BankAccount("tom", 1003m);
+BankAccount jerry = new BankAccount("jerry", 1004m);
+BankAccount yufei = new BankAccount("yufei", 1005m);
+BankAccount rusell = new BankAccount("rusell", 1006m);
+BankAccount sue = new BankAccount("sue", 1007m);
+BankAccount aroosh = new BankAccount("aroosh", 1008m);
+BankAccount sam = new BankAccount("sam", 1009m);
+
+SortedSet<BankAccount> BankAccounts = new SortedSet<BankAccount>{ian, jack, alice, tom, jerry, yufei, rusell, sue, aroosh, sam};
