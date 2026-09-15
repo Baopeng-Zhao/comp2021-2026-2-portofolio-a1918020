@@ -42,4 +42,50 @@ BankAccount sue = new BankAccount("sue", 1007m);
 BankAccount aroosh = new BankAccount("aroosh", 1008m);
 BankAccount sam = new BankAccount("sam", 1009m);
 
-SortedSet<BankAccount> BankAccounts = new SortedSet<BankAccount>{ian, jack, alice, tom, jerry, yufei, rusell, sue, aroosh, sam};
+SortedSet<BankAccount> BankAccounts = new SortedSet<BankAccount>(new BankComparer()){ian, jack, alice, tom, jerry, yufei, rusell, sue, aroosh, sam};
+
+void DisplayAccounts(SortedSet<BankAccount> BankAccounts){
+    foreach(BankAccount account in BankAccounts)
+    {
+        Console.WriteLine($"Name is: {account.Owner} and the Balance is: {account.Balance}");
+    }
+}
+
+DisplayAccounts(BankAccounts);
+Console.WriteLine("");
+
+BankAccount Liam = new BankAccount("Liam", 100m);
+BankAccount Olivia = new BankAccount("Olivia", 10201m);
+BankAccount Ethan = new BankAccount("Ethan", 10032m);
+BankAccount Sophia = new BankAccount("Sophia", 3m);
+BankAccount Noah = new BankAccount("Noah", 144m);
+BankAccount Mia = new BankAccount("Mia", 1025m);
+BankAccount Lucas = new BankAccount("Lucas", 1506m);
+BankAccount Chloe = new BankAccount("Chloe", 1507m);
+BankAccount Daniel = new BankAccount("Daniel", 18m);
+BankAccount Grace = new BankAccount("Grace", 1m);
+BankAccounts.Add(Liam);
+BankAccounts.Add(Olivia);
+BankAccounts.Add(Ethan);
+BankAccounts.Add(Sophia);
+BankAccounts.Add(Noah);
+BankAccounts.Add(Mia);
+BankAccounts.Add(Lucas);
+BankAccounts.Add(Chloe);
+BankAccounts.Add(Daniel);
+BankAccounts.Add(Grace);
+
+DisplayAccounts(BankAccounts);
+Console.WriteLine("");
+
+BankAccount poor = new BankAccount("poor", 0m);
+BankAccount rich = new BankAccount("rich", 100000000000000m);
+BankAccounts.Add(poor);
+BankAccounts.Add(rich);
+
+DisplayAccounts(BankAccounts);
+Console.WriteLine("");
+
+BankAccounts.Add(ian);
+DisplayAccounts(BankAccounts);
+Console.WriteLine("");
