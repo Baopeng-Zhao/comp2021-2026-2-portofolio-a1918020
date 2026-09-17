@@ -4,3 +4,10 @@ What happened when you tried to add the a duplicate score? Why?
 Answer: it will cause error. Because key in SortedDictionary must be unique. Two same key in SortedDictionary is not be allowed.
 Contrast SortedSet and SortedDictionary. Provide an example of when each might be useful.
 Answer: A sorted set must ensure that the values are unique, while a sorted dictionary must ensure that the keys are unique. SortedSet is suitable for ranking by points, while SortedDictionary is used for storing corresponding information, such as a player's wealth.
+
+What data structure backs a PriorityQueue? How did you find out?
+Answer: PriorityQueue is backed by a heap data structure. I found it by searching Google.
+What happens when you Enqueue two different players with the same priority?
+Answer:Both players were successfully added because in the priority queue, the same elements are allowed. However, they have the same priority, which does not completely guarantee that this is a list that executes in order.
+Why does a PriorityQueue permit duplicates when a SortedSet does not?
+Answer: PriorityQueue is used to handle a certain element with priority, while SortedSet is used to store a completely different set of elements and sort them. They are designed for different purposes.
