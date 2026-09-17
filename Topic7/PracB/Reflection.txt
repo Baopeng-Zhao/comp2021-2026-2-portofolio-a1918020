@@ -11,3 +11,8 @@ What happens when you Enqueue two different players with the same priority?
 Answer:Both players were successfully added because in the priority queue, the same elements are allowed. However, they have the same priority, which does not completely guarantee that this is a list that executes in order.
 Why does a PriorityQueue permit duplicates when a SortedSet does not?
 Answer: PriorityQueue is used to handle a certain element with priority, while SortedSet is used to store a completely different set of elements and sort them. They are designed for different purposes.
+
+In previous Tasks we've had to implement IComparer or IComparable to get priority working, why wasn't it required for our Priority enum?
+Answer: In a priority queue, the priority queue is designed for handling priority-based output. Thus, there is a piece of data within it that is used for the priority comparison process of the output. Therefore, there is no need to write another comparer, as the program knows how to perform the comparison.
+If instead of an enum, we used a Struct with one prop int Priority {get; set;} = 0, would we need to use implement IComparer or IComparable? Why or why not?
+Answer: Yes, at this point, it is necessary to write a custom comparison method. Since the system's built-in priority comparison was not used, at this point the program does not know which attribute to use for comparison and priority output. Therefore, the program needs a comparison method to handle the data.

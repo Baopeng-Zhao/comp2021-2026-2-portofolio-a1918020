@@ -1,0 +1,6 @@
+Did you need to run .Sort() or similiar on your SortedSet to maintain its ordering? Why or why not?
+Answer: No, I don't need to do that because the sortedset will automatically sort in the default order to ensure the sequence, so there's no need to call the sort function separately.
+What is the underlying data structure used by SortedSet? How did you find out?
+Answer: SortedSet class is internally implemented using a self-balancing binary search tree, specifically a Red-Black Tree. And i found it by searching Google.
+What happened when you tried to add the duplicate score to the set? Why does SortedSet behave this way?
+Answer: The repeated values were not added because the sorted set only allows unique values to be entered, so the repeated values were not added.

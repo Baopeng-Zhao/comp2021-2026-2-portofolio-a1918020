@@ -26,5 +26,55 @@ while(EventQueue.Count != 0)
     Console.WriteLine(EventQueue.Dequeue());
 }
 
+Console.WriteLine("After adding: ");
+Console.WriteLine("");
+
 Player player11 = new Player("noname", 100, 10, 5);
 EventQueue.Enqueue(player11, 11);
+
+while(EventQueue.Count != 0)
+{
+    Console.WriteLine(EventQueue.Dequeue());
+}
+
+Console.WriteLine("");
+Console.WriteLine("");
+
+var EventQueue2 = new PriorityQueue<Player, Priority>();
+Priority priorityPlayer1 = Priority.HighPriority;
+Priority priorityPlayer2 = Priority.MediumPriority;
+Priority priorityPlayer3 = Priority.LowPriority;
+Priority priorityPlayer4 = Priority.LowPriority;
+Priority priorityPlayer5 = Priority.MediumPriority;
+Priority priorityPlayer6 = Priority.LowPriority;
+Priority priorityPlayer7 = Priority.HighPriority;
+Priority priorityPlayer8 = Priority.HighPriority;
+Priority priorityPlayer9 = Priority.MediumPriority;
+Priority priorityPlayer10 = Priority.MediumPriority;
+
+EventQueue2.Enqueue(player1, priorityPlayer1);
+EventQueue2.Enqueue(player2, priorityPlayer2);
+EventQueue2.Enqueue(player3, priorityPlayer3);
+EventQueue2.Enqueue(player4, priorityPlayer4);
+EventQueue2.Enqueue(player5, priorityPlayer5);
+EventQueue2.Enqueue(player6, priorityPlayer6);
+EventQueue2.Enqueue(player7, priorityPlayer7);
+EventQueue2.Enqueue(player8, priorityPlayer8);
+EventQueue2.Enqueue(player9, priorityPlayer9);
+EventQueue2.Enqueue(player10, priorityPlayer10);
+
+while(EventQueue2.Count != 0)
+{
+    Console.WriteLine(EventQueue2.Dequeue());
+}
+
+Console.WriteLine("After adding: ");
+Console.WriteLine("");
+
+Priority priorityPlayer11 =Priority.HighPriority;
+EventQueue2.Enqueue(player11, priorityPlayer11);
+
+while(EventQueue2.Count != 0)
+{
+    Console.WriteLine(EventQueue2.Dequeue());
+}
