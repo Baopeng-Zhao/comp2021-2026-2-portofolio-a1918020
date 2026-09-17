@@ -1,0 +1,6 @@
+What is the data structure backing the SortedDictionary? How did you find out?
+Answer: SortedDictionary is backed by a balanced binary search tree. I found it by searching Google.
+What happened when you tried to add the a duplicate score? Why?
+Answer: it will cause error. Because key in SortedDictionary must be unique. Two same key in SortedDictionary is not be allowed.
+Contrast SortedSet and SortedDictionary. Provide an example of when each might be useful.
+Answer: A sorted set must ensure that the values are unique, while a sorted dictionary must ensure that the keys are unique. SortedSet is suitable for ranking by points, while SortedDictionary is used for storing corresponding information, such as a player's wealth.
