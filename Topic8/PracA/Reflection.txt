@@ -4,3 +4,7 @@ What happened when you tried to add the duplicate Key?
 Answer: The system threw an exception because a Hashtable does not allow duplicate keys.
 Were you able to use LINQ methods when writing your sorting algorithm? Why / why not?
 Answer: No, Because LINQ can only perform query operations on the IEnumerable<T> type, but Hashtable is of the IEnumerable type, I need to first convert the Hashtable type before I can use the LINQ operations on it.
+Which approach was faster? Append or Build?
+Answer: Build was faster.
+Why?
+Answer: StringBuild is an internally mutable type. Unlike string, when adding strings, there is no need to copy the original string content and then add the new content into a new string. Therefore, StringBuild is faster.
