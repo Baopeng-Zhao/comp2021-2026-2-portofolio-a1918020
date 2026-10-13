@@ -1,0 +1,6 @@
+What happened when you tried to add the (Key: String, Value: int) entry? Why?
+Answer: The entry was successfully added because the key and value of the Hashtable both use the object type, so it can accept both string types and integer types.
+What happened when you tried to add the duplicate Key?
+Answer: The system threw an exception because a Hashtable does not allow duplicate keys.
+Were you able to use LINQ methods when writing your sorting algorithm? Why / why not?
+Answer: No, Because LINQ can only perform query operations on the IEnumerable<T> type, but Hashtable is of the IEnumerable type, I need to first convert the Hashtable type before I can use the LINQ operations on it.
