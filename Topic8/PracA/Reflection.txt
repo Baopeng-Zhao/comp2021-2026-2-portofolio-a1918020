@@ -8,3 +8,11 @@ Which approach was faster? Append or Build?
 Answer: Build was faster.
 Why?
 Answer: StringBuild is an internally mutable type. Unlike string, when adding strings, there is no need to copy the original string content and then add the new content into a new string. Therefore, StringBuild is faster.
+What is the Big-O notation complexity of the Append method?
+Answer: O(n^2)
+How does your evidence support this conclusion?
+Answer: The graph is expected to show that execution time increases non-linearly as the number of iterations increases.
+What is the Big-O notation complexity of the Builder method?
+Answer: O(n)
+How does your evidence support this conclusion?
+Answer: The graph is expected to show an approximately linear relationship between the number of iterations and the execution time.
