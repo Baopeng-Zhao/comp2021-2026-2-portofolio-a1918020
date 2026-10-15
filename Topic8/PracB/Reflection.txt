@@ -1,0 +1,8 @@
+What happens if the text file already exists when you write to it?
+Answer: If the statement "if (!File.Exists(path))" is not used, the system will directly overwrite the old content. However, if this statement is employed, the program will skip the writing process.
+What does the @ symbol before the quoted string mean?
+Answer: The @ symbol creates a verbatim string literal. It allows us to use backslashes in file paths without escaping them.
+Do you need to wrap the file access with using StreamReader and using StreamWriter? What would happen if you don't do this?
+Answer: The purpose of using is that after the program calls StreamWriter and StreamReader, it will automatically close the file and release the resources. If the using statement is not used, the file will remain open.
+How is using the StreamReader different from just File.ReadAllText()?
+Answer: StreamReader can read a file line by line, which is more memory-efficient for large files. File.ReadAllText() reads the entire file into a single string, which is simpler but requires more memory for large files.
