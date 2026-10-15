@@ -12,3 +12,11 @@ What happens if all your Classes properties aren't public?
 Answer: If the class attribute is not public, during the serialization and deserialization processes, it cannot output the contents of those private attributes. This means that some data will not appear in the JSON output.
 What does where T : class mean?
 Answer: where T : class is a generic constraint in C#. It means that the generic type T must be a reference type, such as a class, string, or List. Value types such as int and double cannot be used.
+What is the purpose of the Gargbage Collector?
+Answer: It identifies objects that are no longer reachable by the program and reclaims their memory to make space for new objects.
+Why does it know the current amount of bytes allocated to the Heap?
+Answer: The Garbage Collector manages the managed heap and tracks memory allocations. Therefore, it can provide information about the heap size and memory usage.
+What does GC.Collect() do?
+Answer: work once Garbage Collection.
+Was the PeakWorkingSet64 different to the HeapSizeBytes? Why?
+Answer: Yes, HeapSizeBytes reports the managed heap size from the last garbage collection, while PeakWorkingSet64 reports the maximum physical memory working set used by the entire process.
