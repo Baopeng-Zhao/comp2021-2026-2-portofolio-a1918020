@@ -10,3 +10,5 @@ What does the ! symbol at the end of the Deserialize line above do?
 Answer: ! The purpose of this is to inform the program that the return value may be null, which can prevent warnings, but it cannot truly eliminate the occurrence of returning null.
 What happens if all your Classes properties aren't public?
 Answer: If the class attribute is not public, during the serialization and deserialization processes, it cannot output the contents of those private attributes. This means that some data will not appear in the JSON output.
+What does where T : class mean?
+Answer: where T : class is a generic constraint in C#. It means that the generic type T must be a reference type, such as a class, string, or List. Value types such as int and double cannot be used.
