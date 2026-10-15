@@ -6,3 +6,7 @@ Do you need to wrap the file access with using StreamReader and using StreamWrit
 Answer: The purpose of using is that after the program calls StreamWriter and StreamReader, it will automatically close the file and release the resources. If the using statement is not used, the file will remain open.
 How is using the StreamReader different from just File.ReadAllText()?
 Answer: StreamReader can read a file line by line, which is more memory-efficient for large files. File.ReadAllText() reads the entire file into a single string, which is simpler but requires more memory for large files.
+What does the ! symbol at the end of the Deserialize line above do?
+Answer: ! The purpose of this is to inform the program that the return value may be null, which can prevent warnings, but it cannot truly eliminate the occurrence of returning null.
+What happens if all your Classes properties aren't public?
+Answer: If the class attribute is not public, during the serialization and deserialization processes, it cannot output the contents of those private attributes. This means that some data will not appear in the JSON output.
