@@ -20,3 +20,7 @@ What does GC.Collect() do?
 Answer: work once Garbage Collection.
 Was the PeakWorkingSet64 different to the HeapSizeBytes? Why?
 Answer: Yes, HeapSizeBytes reports the managed heap size from the last garbage collection, while PeakWorkingSet64 reports the maximum physical memory working set used by the entire process.
+Which class used more memory?
+Answer: LinkedList used more memory.
+Why?
+Answer: LinkedList uses more memory because each node stores the element and references to the previous and next nodes. In contrast, List stores element references in an array, which generally requires less memory.
