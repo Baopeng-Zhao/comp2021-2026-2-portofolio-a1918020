@@ -1,0 +1,16 @@
+What sort of Graph have we created? Is it directed / undirected? Cyclic or acyclic? Weighted or unweighted?
+Answer: undirected and unweighted. It can be either Cyclic or acyclic depending on the edges added.
+Other than Binary Search Tree and Linked List, what are two other commonly used data structures that are also secretly Graphs?
+Answer: Trie and Heap
+Why do we need to create and keep track of which Nodes we've "visited"?
+Answer: To avoid tracking repeated Nodes.
+In the adjusted graph above, there are 2 correct paths to I,  which one does your BFS algorithm take? Why?
+Answer: BFS takes the shortest path because it explores nodes level by level using a Queue.
+What is the computational complexity of BFS? What does |V| + |E| mean?
+Answer: O(V + E), where V represents the number of vertices and E represents the number of edges.
+For the initial graph, which algorithm would find the target faster, BFS or DFS? Why?
+Answer: Both have same speed. Because they have to visit all nodes to finsih.
+For the adjusted graph, which algorithm would find the target faster, BFS or DFS? Why?
+Answer: BFS, because it explores nodes level by level and finds the direct connection from A to I.
+If the algorithms are different, how can the computational complexity of BFS and DFS be the same?
+Answer: Although BFS and DFS explore nodes in different orders, they have the same time complexity of O(V + E) because both may need to visit every vertex and examine every edge in the worst case. The difference is their traversal order, not their asymptotic complexity.
