@@ -14,3 +14,17 @@ Compared to your code, what was one aspect the AI tool did better?
 Answer: The AI handled outdated entries in the PriorityQueue by checking whether the queued distance was still the shortest known distance. My implementation does not perform this check, so it may process unnecessary entries.
 Compared to your code, what was one aspect the AI tool did worse?
 Answer：AI's code has worse readability, it makes code complex and unnecessary.
+What's been your favourite C# feature?
+Answer: List. because easy to understand.
+What's been your most hated C# feature?
+Answer: HashBoard. because as a basic feature is hard to use.
+What was the easiest prac or topic for you, and why?
+Answer: topic1, because only setup we did.
+What was the most fun prac or topic for you, and why?
+Answer: Graph. because i feel like be a coding worker.
+What's one area you're going to revise before the exam?
+Answer: X-unit.
+What's one piece of advice you would give to new students taking SDP next semester?
+Answer: learn details about C#. Because in most practical, we dont have enough time to realize these information.
+What's one suggestion you have for the course coordinator to make the course better?
+Answer: Attendance must be recorded for important lectures, and attendance affects the final score.
