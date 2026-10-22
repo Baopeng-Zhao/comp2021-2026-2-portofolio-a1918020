@@ -2,3 +2,15 @@ Explain, in plain English, how does your implementation of Dijkstra's algorithm 
 Answer: setting the distance of the Start node to 0 and all other nodes to infinity. It uses a PriorityQueue to process the node with the smallest known distance first. For each neighbour, the algorithm calculates a new distance by adding the edge weight to the current distance. If the new distance is smaller than the stored distance, it updates the DistanceList and records the parent node. When the End node is reached, the algorithm uses the parents dictionary to find the shortest path and reverses it to display the path from Start to End.
 What is the computational complexity of Dijkstra's? Why is it different than BFS / DFS?
 Answer: O((V+E)logV),Dijkstra is always seeking the route with the lowest weight, while BFS/DFS is always looking for the shortest route.
+What AI tool did you use?
+Answer: ChatGPT
+What were some of the prompts you used?
+Answer: my Node.cs, graph.cs and all requirements of Task1 and Task2
+Did the AI one-shot the problem, or did it require revision? How many rounds did it take?
+Answer: one-shot problem.
+What was one of the ways the AI code was substantially different to your approach?
+Answer: AI deal with distance by using foreach while i added each node to DistanceList manually
+Compared to your code, what was one aspect the AI tool did better?
+Answer: The AI handled outdated entries in the PriorityQueue by checking whether the queued distance was still the shortest known distance. My implementation does not perform this check, so it may process unnecessary entries.
+Compared to your code, what was one aspect the AI tool did worse?
+Answer：AI's code has worse readability, it makes code complex and unnecessary.

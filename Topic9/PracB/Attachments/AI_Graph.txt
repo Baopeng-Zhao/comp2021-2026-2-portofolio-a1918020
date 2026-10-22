@@ -1,0 +1,39 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+public class Graph
+{
+    public List<Node> Nodes { get; }
+
+    public Graph()
+    {
+        Nodes = new List<Node>();
+    }
+
+    public void AddEdge(Node fromNode, Node toNode, int weight)
+    {
+        if (weight < 0)
+        {
+            throw new ArgumentOutOfRangeException(nameof(weight),
+                "Dijkstra's algorithm requires non-negative weights.");
+        }
+
+        if (!Nodes.Contains(fromNode)) Nodes.Add(fromNode);
+        if (!Nodes.Contains(toNode)) Nodes.Add(toNode);
+
+        // Store both directions because this graph is undirected.
+        fromNode.Edges[toNode] = weight;
+        toNode.Edges[fromNode] = weight;
+    }
+
+    public override string ToString()
+    {
+        StringBuilder result = new StringBuilder();
+        foreach (Node node in Nodes)
+        {
+            result.AppendLine(node.Data);
+        }
+        return result.ToString();
+    }
+}
